@@ -28,7 +28,7 @@ include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libosdep
-LOCAL_SRC_FILES := $(LOCAL_PATH)/../libosdep/local/armeabi/libosdep.a
+LOCAL_SRC_FILES := $(LOCAL_PATH)/../libosdep/local/$(TARGET_ARCH_ABI)/libosdep.a
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../libosdep/src
 include $(PREBUILT_STATIC_LIBRARY)
 
